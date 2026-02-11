@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Appointment System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Smart Appointment System</h1>
+
+    <!-- USER FORM -->
+    <div class="card">
+        <h2>Create User</h2>
+        <form method="post" action="/users">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="phone" placeholder="Phone" required>
+            <button type="submit">Create User</button>
+        </form>
+    </div>
+
+    <!-- APPOINTMENT FORM -->
+    <div class="card">
+        <h2>Book Appointment</h2>
+        <form method="post" action="/appointments">
+            <input type="number" name="user_id" placeholder="User ID" required>
+            <input type="date" name="appointment_date" required>
+            <input type="time" name="appointment_time" required>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+
+    <p class="note">
+        
+    </p>
+</div>
+
+</body>
+</html>

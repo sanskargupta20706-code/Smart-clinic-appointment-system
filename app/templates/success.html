@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment Confirmed</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="success-box">
+    <div class="checkmark">✔</div>
+
+    <h2>Appointment Confirmed!</h2>
+
+    <p>Your appointment has been booked successfully.</p>
+
+    <div class="queue">
+        Your Queue Number
+        <span>{{ queue }}</span>
+    </div>
+
+    <p class="note">
+        Please arrive on time according to your queue number.
+    </p>
+
+    <a href="/ui" class="btn">Book Another Appointment</a>
+</div>
+
+</body>
+</html>
